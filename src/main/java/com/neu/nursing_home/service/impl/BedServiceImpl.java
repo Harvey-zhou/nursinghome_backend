@@ -59,8 +59,8 @@ public class BedServiceImpl implements BedService {
     }
 
     @Override
-    public void update(Bed bed) {
-        bedMapper.update(bed);
+    public int update(Bed bed) {
+        return bedMapper.update(bed);
     }
 
 /*    //参考博客https://blog.csdn.net/ilikejj0/article/details/81110009
