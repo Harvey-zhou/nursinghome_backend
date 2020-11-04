@@ -13,5 +13,6 @@ public interface BedService {
     public List<Bed> selectById(Integer id);
     //public PageInfo<Bed> query(Integer currPage);
     public List<Bed> selectAll(Integer currPage);
-    public void update(Bed bed);
+
+    public int update(Bed bed);
 }

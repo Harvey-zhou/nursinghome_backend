@@ -69,8 +69,9 @@ public class BedController {
 
 
     @RequestMapping("/update")
-    public void update(@RequestBody Bed bed){
-        bedService.update(bed);
+    public boolean update(@RequestBody Bed bed) {
+        int lines = bedService.update(bed);
+        return lines > 0;
     }
 
     @RequestMapping("/test")
